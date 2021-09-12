@@ -1,0 +1,12 @@
+@import '../../root';
+.site-layout-background{
+    transition: all 0.35s ease;
+}
+.table__main{
+    & thead > tr > th{
+        color: $color-main;
+    }
+    & .ant-table-tbody > tr.ant-table-row:hover > td{
+        background-color: $color-hover;
+    }
+}

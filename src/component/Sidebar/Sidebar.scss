@@ -1,0 +1,41 @@
+@import '../../root';
+.site-layout-background{
+    background-color: $color-background;
+    padding-top: 20px;
+    padding-right: 10px;
+    .siderBar__content{
+        width: 80%;
+        float: right;
+        h1{
+            font-size: 30px;
+        }
+        .filter__item{
+            margin-bottom: 10px;
+            position: relative;
+            padding-right: 10px;
+            p{
+                margin: 0;
+                color: $color-main;
+                font-weight: 500;
+            }
+            .filter__select{
+                width: 100%;
+                border-bottom: 1px solid;
+            }
+            input{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                border-bottom: 1px solid;
+                border-radius: 0;
+                color: $color-text-hover;
+                &:focus{
+                    border: none;
+                    outline: none;
+                    box-shadow: unset;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+}

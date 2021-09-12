@@ -1,0 +1,57 @@
+@import '../../root';
+.header{
+    height: auto;
+    padding: 0;
+    &__top{
+        @include flexBox( space-between , center , nowrap );
+        background-color: $color-background;
+        padding: 0 $padding-header;
+    }
+    &__bottom{
+        @include flexBox( space-between , center , nowrap );
+        background-color: $color-main;
+        padding: 0 20px 0 50px;
+        color: white;
+        &--right{
+            font-size: 30px;
+            cursor: pointer;
+            .filter{
+                    margin-right: 30px;
+            }
+        }
+        &--left{
+            .header__bottom--total{
+                color: $color-background;
+                margin-left: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+    &__infor{
+       .header__name{
+           margin: 0 10px;
+       } 
+    }
+    &__logo{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    &__mid{
+        color: $color-text-hover;
+        cursor: pointer
+    }
+    &__menu{
+        @include flexBox(flex-start , center , nowrap);
+        &--icon{
+            color: $color-main;
+            font-size: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            margin-right: 15px;
+        }
+        & span{
+            font-weight: 600;
+        }
+    }
+}
